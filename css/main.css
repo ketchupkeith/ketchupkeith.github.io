@@ -24,14 +24,14 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 h1.shadow {   
-    text-shadow: 2px 2px 4px #A8774F;
+    text-shadow: 2px 2px 4px #E39E65;
 }
 h2 {
     font-size: 2.2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 h2.shadow {
-    text-shadow: 1px 1px 2px #A8774F;
+    text-shadow: 1px 1px 2px #E39E65;
 }
 p {
     font-size: 1.5em;
