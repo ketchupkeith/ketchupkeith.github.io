@@ -5,6 +5,9 @@
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        
+        <script async src="main.js"></script>
+        <script async src="https://www.youtube.com/iframe_api"></script>
 		<style>
 			html {
 			}
@@ -13,14 +16,24 @@
 			}
 		</style>
 	</head>
+    <section id="home-banner-box" class="home-banner loading">
+	<div class="image video-slide" style="background-image: url($ImageURL)">
+		<div class="video-background">
+			<div class="video-foreground" id="YouTubeBackgroundVideoPlayer">
+		    </div>
+		</div>
+	</div>
+    </section>
 	<body>
+        
+        
 		<nav>
     		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/GP1">GP1</a></li>
-        		<li><a href="/GP2">GP2</a></li>
-        		<li><a href="/GP3">GP3</a></li>
-        		<li><a href="/GP4">GP4</a></li>
+        		<li><a href="/">0. Home</a></li>
+	        	<li><a href="/GP1">1. Proposal</a></li>
+        		<li><a href="/GP2">2. Alternatives</a></li>
+        		<li><a href="/GP3">3. Prototype</a></li>
+        		<li><a href="/GP4">4. Report</a></li>
     		</ul>
 		</nav>
 		<div class="container">
@@ -37,11 +50,11 @@
 		</div><!-- /.container -->
 		<footer>
     		<ul>
-                <li>TEAM MEMBERS</li>
-        		<li><a href="mailto:rosepierce@uchicago.edu">Rose Pierce</a></li>
-        		<li><a href="mailto:jtjozefowicz@uchicago.edu">Jane Jozefowicz</a></li>
-        		<li><a href="mailto:awang21@uchicago.edu">Ashley Wang</a></li>
-        		<li><a href="mailto:keithheinz@uchicago.edu">Keith Heinz</a></li>
+                <li><a href="/team">TEAM MEMBERS</a></li>
+        		<li>Rose Pierce</li>
+        		<li>Jane Jozefowicz</li>
+        		<li>Ashley Wang</li>
+        		<li>Keith Heinz</li>
 			</ul>
 		</footer>
 	</body>
