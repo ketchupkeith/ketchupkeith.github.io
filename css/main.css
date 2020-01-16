@@ -1,8 +1,20 @@
-body {
-    margin: auto;
-    margin-top: calc(50vh - 250px);
+:root {
+    --accent-color:#ffb16e;
+}
+
+html {
+    background-color: #000;
+}
+
+.main {
+    position: fixed;
+    margin-left: calc(50vw - 510px);
+    margin-top: calc(50vh - 280px);
     width: 900px;
     height: 500px;
+    z-index: 9999;
+    background-color: black;
+    padding: 30px 60px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -18,7 +30,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #FECFA8;
+    color: var(--accent-color);
 }
 a:hover {
     text-decoration: underline;
@@ -26,18 +38,18 @@ a:hover {
 h1 {
     font-size: 36px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    color: #fff;
+    color: #ddd;
 }
 h1.shadow {
-    text-shadow: 2px 2px 4px #E39E65;
+    text-shadow: 2px 2px 4px var(--accent-color);
 }
 h2 {
     font-size: 24px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    color: #fff;
+    color: #ddd;
 }
 h2.shadow {
-    text-shadow: 1px 1px 2px #E39E65;
+    text-shadow: 1px 1px 2px var(--accent-color);
 }
 p {
     font-size: 18px;
@@ -48,7 +60,7 @@ p {
     border-left: 1px solid white;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid #ddd;
     font-size: .8em;
 }
 
@@ -58,7 +70,7 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
-    color: #fff;
+    color: #ddd;
 }
 
 .home-banner .slide .video-slide {
@@ -68,23 +80,24 @@ ul.posts li {
   opacity: 0; }
 
 .video-background {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 0;
   padding-top: 56.25%;
   width: 100%;
+  height: 100%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   -webkit-transition: 2s opacity ease;
-  transition: 2s opacity ease;
-  opacity: 1; }
+  transition: 2s opacity ease;}
 
 .video-foreground,
 .video-background iframe {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; }
+  pointer-events: none;
+  opacity: 0.3;}
