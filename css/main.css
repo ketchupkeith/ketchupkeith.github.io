@@ -42,11 +42,11 @@ header{
 
 .main {
     position: absolute;
-    margin-left: calc(50vw - 510px);
-    margin-top: calc(50vh - 300px);
-    margin-bottom: calc(50vh - 350px);
-    width: 900px;
-    height: 640px;
+    margin-left: calc(50vw - 560px);
+    margin-top: calc(50vh - 240px);
+    margin-bottom: calc(50vh - 315px);
+    width: 1000px;
+    height: 570px;
     z-index: 9999;
     background-color: black;
     padding: 30px 60px;
@@ -87,8 +87,8 @@ h2.shadow {
     text-shadow: 1px 1px 2px var(--accent-color);
 }
 p {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
     color: #DDD;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding-left: 20px;
@@ -96,7 +96,7 @@ p {
 }
 footer {
     border-top: 1px solid #ddd;
-    font-size: .8em;
+    font-size: 14px;
 }
 
 ul.posts {
@@ -106,6 +106,13 @@ ul.posts {
 ul.posts li {
     list-style: none;
     color: #ddd;
+}
+
+ ul li a{
+    text-transform: uppercase;
+    font-style:italic;
+    letter-spacing: 1px;
+    
 }
 
 .home-banner .slide .video-slide {
